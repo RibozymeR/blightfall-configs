@@ -1,10 +1,12 @@
 import mods.nei.NEI;
 
-NEI.hide(<cookingforblockheads:recipebook:3>);
-recipes.remove(<cookingforblockheads:recipebook:3>);
+print("SCRIPT: Blockheads");
 
-recipes.remove(<cookingforblockheads:recipebook:1>);
-recipes.addShapeless(<cookingforblockheads:recipebook:1>, [<cookingforblockheads:recipebook>, <minecraft:crafting_table>]);
+NEI.hide(<cookingbook:recipebook:3>);
+recipes.remove(<cookingbook:recipebook:3>);
 
-<cookingforblockheads:recipebook>.addTooltip("Will hang for a couple of");
-<cookingforblockheads:recipebook>.addTooltip("seconds when first opened.");
+recipes.remove(<cookingbook:recipebook:1>);
+recipes.addShapeless(<cookingbook:recipebook:1>, [<cookingbook:recipebook>, <minecraft:crafting_table>]);
+
+<cookingbook:recipebook>.addTooltip("Will hang for a couple of");
+<cookingbook:recipebook>.addTooltip("seconds when first opened.");
